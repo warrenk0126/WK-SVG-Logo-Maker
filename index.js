@@ -1,7 +1,6 @@
 // Import required modules
 const inquirer = require('inquirer');
 const fs = require('fs');
-const SVG = require('svg.js');
 const { Triangle, Circle, Square } = require('./lib/shapes');
 
 // Main function
@@ -37,21 +36,20 @@ async function main() {
     },
   ]);
 
-  // Create SVG drawing area
-  const draw = SVG().size(300, 200);
-  
   // Create shape with user-provided color
   const shape = new (eval(answers.shape))(answers.shapeColor);
-  
-  // Add shape to SVG
-  draw.svg(shape.render()).move(50, 50);
-  
-  // Add text to SVG
-  draw.text(answers.text).fill(answers.textColor).move(100, 100);
+
+  // Create SVG string
+  const svg = `
+    <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+      ${shape.render()}
+      <text x="50" y="57" fill="${answers.textColor}" text-anchor="middle" dominant-baseline="middle">${answers.text}</text>
+    </svg>
+  `;
 
   // Write SVG to file
-  fs.writeFileSync('logo.svg', draw.svg());
-  
+  fs.writeFileSync('logo.svg', svg);
+
   // Log success message
   console.log('Generated logo.svg');
 }
