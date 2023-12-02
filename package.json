@@ -1,0 +1,27 @@
+{
+    "name": "wk-svg-logo-maker",
+    "version": "1.0.0",
+    "description": "A command-line application that generates SVG logos",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/warrenk0126/wk-svg-logo-maker.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/warrenk0126/wk-svg-logo-maker/issues"
+    },
+    "homepage": "https://github.com/warrenk0126/wk-svg-logo-maker#readme",
+    "dependencies": {
+        "inquirer": "^7.3.3",
+        "@svgdotjs/svg.js": "^3.1.1"
+    },
+    "devDependencies": {
+        "jest": "^26.6.3"
+    }
+}
