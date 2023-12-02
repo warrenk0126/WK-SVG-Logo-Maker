@@ -1,6 +1,6 @@
 
     <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-      <polygon points="50,15 100,100 0,100" style="fill:Black"/>
-      <text x="50" y="57" fill="Green" text-anchor="middle" dominant-baseline="middle">FSD</text>
+      <circle cx="50" cy="50" r="50" style="fill:Blue"/>
+      <text x="50" y="57" fill="Yellow" text-anchor="middle" dominant-baseline="middle">FSD</text>
     </svg>
   
