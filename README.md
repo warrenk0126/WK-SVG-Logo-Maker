@@ -23,7 +23,7 @@ WK-SVG-Logo-Maker is a Node.js command-line application that generates SVG logos
 
 For a detailed walkthrough of how to use the application, please watch the following video:
 
-[![Walkthrough Video]](https://i.imgur.com/tPvIOzG.mp4)
+[Walkthrough Video](https://i.imgur.com/tPvIOzG.mp4)
 
 ## License
 
